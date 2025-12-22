@@ -15,38 +15,59 @@ using namespace std;
 //     }
 // }
 
-class nCr {
-    private:
-    int x, y;
-    long long fact(int a){
-        long long fact = 1;
-        for(int i=1;i<=a;i++){
-            fact = fact*i;
+// class nCr {
+//     private:
+//     int x, y;
+//     long long fact(int a){
+//         long long fact = 1;
+//         for(int i=1;i<=a;i++){
+//             fact = fact*i;
+//         }
+//         return fact;
+//     }
+
+//     void nCrCalc(int n,int r){
+//         long ncr;
+//         ncr = fact(n)/(fact(r)*fact(n-r));
+//         cout << ncr <<endl;
+//     }
+//     public:
+//     nCr(int a, int b){
+//         this->x = a;
+//         this->y = b;
+//     }
+    
+//     void print(){
+//         nCrCalc(x,y);
+//     }
+    
+// };
+
+void PrimeOrNot(int x){
+    bool isPrime = true;
+    for(int i=2;i*i<=x;i++){
+        int remainder = x%i;
+        if(remainder == 0){
+            isPrime = false;
+            break;
         }
-        return fact;
+        
+    }
+    if(isPrime == true){
+        cout<<x<<" is Prime"<<endl;
+    } else {
+        cout<<x<<" is not Prime"<<endl;
     }
 
-    void nCrCalc(int n,int r){
-        long ncr;
-        ncr = fact(n)/(fact(r)*fact(n-r));
-        cout << ncr <<endl;
-    }
-    public:
-    nCr(int a, int b){
-        this->x = a;
-        this->y = b;
-    }
-    
-    void print(){
-        nCrCalc(x,y);
-    }
-    
-};
+}
 
 int main(){ 
     // int a = 12345;
     // sumOfDigits(a);
-    nCr n1(3,2);
-    n1.print();
+    // nCr n1(3,2);
+    // n1.print();
+
+    PrimeOrNot(2);
+
     return 0;
 }
