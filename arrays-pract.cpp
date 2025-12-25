@@ -1,5 +1,4 @@
 #include<iostream>
-#include<string>
 using namespace std;
 //sum & product of all numbers in an array
 void sumANDproductsArr(int arr[], int size){
