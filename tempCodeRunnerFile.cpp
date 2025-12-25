@@ -1,3 +1,3 @@
-for(int i=0; i<size; i++){
-        cout<<num[i]<<endl;
-    }
+
+    // cout<<names.back()<<endl;
+    // cout<<names.at(2)<<endl;
