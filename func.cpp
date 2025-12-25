@@ -43,31 +43,48 @@ using namespace std;
     
 // };
 
-void PrimeOrNot(int x){
-    bool isPrime = true;
-    for(int i=2;i*i<=x;i++){
-        int remainder = x%i;
-        if(remainder == 0){
-            isPrime = false;
-            break;
-        }
+// void PrimeOrNot(int x){
+//     bool isPrime = true;
+//     for(int i=2;i*i<=x;i++){
+//         int remainder = x%i;
+//         if(remainder == 0){
+//             isPrime = false;
+//             break;
+//         }
         
-    }
-    if(isPrime == true){
-        cout<<x<<" is Prime"<<endl;
-    } else {
-        cout<<x<<" is not Prime"<<endl;
-    }
+//     }
+//     if(isPrime == true){
+//         cout<<x<<" is Prime"<<endl;
+//     } else {
+//         cout<<x<<" is not Prime"<<endl;
+//     }
 
-}
+// }
 
+// void PrimeNumbers(int n){
+//     for(int i=2; i<=n; i++){
+//         bool isPrime = true;
+//         for(int j=2; j< i; j++){
+//             if(i%j==0){
+//                 isPrime = false;
+//                 break;
+//             }
+            
+//         }
+//         if(isPrime){
+//             cout<<i<<endl;
+//         }
+//     }
+
+// }
 int main(){ 
     // int a = 12345;
     // sumOfDigits(a);
     // nCr n1(3,2);
     // n1.print();
+    // PrimeOrNot(2);
+    // PrimeNumbers(20);
 
-    PrimeOrNot(2);
 
     return 0;
 }
